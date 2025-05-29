@@ -28,7 +28,7 @@ const Dashboard: React.FC = () => {
       <header className="bg-primary shadow-sm z-10">
         <div className="flex justify-between items-center px-4 py-2">
           <div className="flex items-center">
-            <img src="ne-logo.svg" alt="Northeastern Logo" className="h-8 w-8 mr-2" />
+            <img src={`${import.meta.env.BASE_URL}ne-logo.svg`} alt="Northeastern Logo" className="h-8 w-8 mr-2" />
             <h1 className="text-white font-bold text-xl">NU Social</h1>
           </div>
           

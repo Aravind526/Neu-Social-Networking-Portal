@@ -38,7 +38,7 @@ const Login: React.FC = () => {
       <div className="w-full max-w-md">
         <div className="bg-white rounded-lg shadow-lg p-8">
           <div className="flex justify-center mb-6">
-            <img src="ne-logo.svg" alt="Northeastern Logo" className="h-16 w-16" />
+            <img src={`${import.meta.env.BASE_URL}ne-logo.svg`} alt="Northeastern Logo" className="h-16 w-16" />
           </div>
           
           <h1 className="text-2xl font-bold text-center mb-6">Login to Northeastern Social Network</h1>
