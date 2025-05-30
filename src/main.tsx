@@ -6,6 +6,12 @@ import App from './App';
 import store from './redux/store';
 import './index.css';
 
+// 🛠 Fix GitHub Pages refresh routing issue
+const redirectPath = new URLSearchParams(window.location.search).get('redirect');
+if (redirectPath) {
+  window.history.replaceState(null, '', redirectPath);
+}
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <Provider store={store}>
