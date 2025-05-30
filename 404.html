@@ -1,0 +1,14 @@
+<!-- public/404.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Redirect all 404s back to index.html for React Router to handle
+      const redirectTo = location.pathname.replace('/Neu-Social-Networking-Portal', '');
+      location.replace('/Neu-Social-Networking-Portal/index.html?redirect=' + redirectTo);
+    </script>
+  </head>
+  <body></body>
+</html>
